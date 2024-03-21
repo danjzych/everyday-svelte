@@ -56,7 +56,25 @@
 		<p>
 			Our JSONTree component has a prop for <em>data</em>, which takes an iterative and iterates
 			over it. When we encounter an interative data structure within said data, we recursively call
-			our component with svelte:fragment.
+			our component with svelte:self, thus creating JSONTree components within itself. At the end of
+			the day, this is just a nested list, but using svelte:self makes it super easy to do this to
+			arbitrary depth.
+		</p>
+		<p>
+			The JSONTree component also uses
+			<CodeSnippet>
+				<svelte:fragment slot="code">
+					{'<svelte:component />'}
+				</svelte:fragment>
+			</CodeSnippet>
+			to conditionally render different components for different types of data, seen in the background
+			colors green (string), yellow (number), and other (blue). If this were real production code, we
+			probably wouldn't want to abstract such a small detail into its own component. However, this shows
+			a helpful pattern, there the
+			<CodeSnippet>
+				<svelte:fragment slot="code">this</svelte:fragment>
+			</CodeSnippet>
+			attribute is handled a helper function that conditionally returns one of multiple possible components.
 		</p>
 	</svelte:fragment>
 	<svelte:fragment slot="additional-content">
