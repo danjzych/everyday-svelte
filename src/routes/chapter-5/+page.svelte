@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Card from '../Card.svelte';
+	import Card from '$lib/components/Card.svelte';
 	import JsonTree from './JSONTree.svelte';
 	import CodeSnippet from '$lib/components/CodeSnippet.svelte';
 
@@ -79,7 +79,7 @@
 	</svelte:fragment>
 	<svelte:fragment slot="additional-content">
 		<div
-			class="my-4 rounded-xl border border-purple-300 bg-purple-100 p-3 text-sm font-extralight shadow-sm"
+			class="my-4 w-3/4 rounded-xl border border-purple-300 bg-purple-100 p-3 text-sm font-extralight shadow-sm"
 		>
 			<h4 class="text-semibold font-mono"><span class="underline">JSON DATA</span>:</h4>
 			<JsonTree data={sampleJson} />
