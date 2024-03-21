@@ -10,7 +10,7 @@
 	<ol class="my-5 flex list-disc flex-col items-center">
 		<h2 class="font-mono text-lg">Sections</h2>
 		<li>
-			<a href="/chatper-5"><span class="font-semibold">Chapter 5:</span> Component Composition</a>
+			<a href="/chapter-5"><span class="font-semibold">Chapter 5:</span> Component Composition</a>
 		</li>
 	</ol>
 </main>

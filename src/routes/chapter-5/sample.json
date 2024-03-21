@@ -1,0 +1,18 @@
+{
+    "firstName": "Daniel",
+    "lastName": "Zych",
+    "age": 30,
+    "bald": true,
+    "languages": ["Javascript", "Typescript", "Python", "SQL"],
+    "workHistory": {
+        "softwareEngineer": {
+                "Fetch Rewards": "Front-End Engineering Apprentice",
+                "Active Artist": "Full-Stack Developer",
+                "Foqal": "Software Engineering Intern"
+            },
+        "other": {
+            "KennyHoopla": "Touring Musician",
+                "company": "Product Manager"
+        }
+    }
+}
