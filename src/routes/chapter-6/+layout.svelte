@@ -4,7 +4,7 @@
 
 <ChapterLayout>
 	<svelte:fragment slot="title">
-		<h2 class="text-center font-mono text-xl">Chapter 5 - Component Composition</h2>
+		<h2 class="text-center font-mono text-xl">Chapter 6 - Custom Events with Actions</h2>
 	</svelte:fragment>
 	<svelte:fragment slot="page">
 		<slot />

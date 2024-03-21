@@ -12,5 +12,10 @@
 		<li>
 			<a href="/chapter-5"><span class="font-semibold">Chapter 5:</span> Component Composition</a>
 		</li>
+		<li>
+			<a href="/chapter-6"
+				><span class="font-semibold">Chapter 6:</span> Custom Events with Actions</a
+			>
+		</li>
 	</ol>
 </main>
