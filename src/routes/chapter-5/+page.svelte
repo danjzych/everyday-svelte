@@ -60,8 +60,10 @@
 		</p>
 	</svelte:fragment>
 	<svelte:fragment slot="additional-content">
-		<div class="self-start">
-			<h4 class="text-semibold font-mono">JSON DATA:</h4>
+		<div
+			class="my-4 rounded-xl border border-purple-300 bg-purple-100 p-3 text-sm font-extralight shadow-sm"
+		>
+			<h4 class="text-semibold font-mono"><span class="underline">JSON DATA</span>:</h4>
 			<JsonTree data={sampleJson} />
 		</div>
 	</svelte:fragment>

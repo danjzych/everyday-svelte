@@ -16,7 +16,7 @@
 	{#each Object.entries(data) as [key, value]}
 		<li>
 			{#if !Number(key) && Number(key) !== 0}
-				<span class="bg-purple-100 px-1 font-mono">
+				<span class="bg-purple-200 px-1 font-mono">
 					{key}:
 				</span>
 			{/if}
