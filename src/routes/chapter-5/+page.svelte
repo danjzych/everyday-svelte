@@ -1,6 +1,8 @@
 <script lang="ts">
 	import Card from '../Card.svelte';
 	import JsonTree from './JSONTree.svelte';
+	import CodeSnippet from '$lib/components/CodeSnippet.svelte';
+
 	import sampleJson from './sample.json';
 </script>
 
@@ -10,12 +12,20 @@
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<p>
-			You can use slots and svelte:fragments to dyanamically render content within a component.
-			Here, we have a Card component that takes 'header' and 'content' slots
+			You can use
+			<CodeSnippet>
+				<svelte:fragment slot="code">slots</svelte:fragment>
+			</CodeSnippet>
+			and
+			<CodeSnippet>
+				<svelte:fragment slot="code">svelte:fragments</svelte:fragment>
+			</CodeSnippet>
+			to dyanamically render content within a component. Here, we have a Card component that takes 'header'
+			and 'content' slots.
 		</p>
 		<p>
 			You can give slots default values as well. In the card below, you can see our Card component
-			rendered with its default values - no svelte:fragments used.
+			rendered with its default values - no fragments used.
 		</p>
 	</svelte:fragment>
 	<svelte:fragment slot="additional-content">
@@ -38,8 +48,10 @@
 	</svelte:fragment>
 	<svelte:fragment slot="content">
 		<p>
-			One awesome feature is <em>svelte:self</em> - this allows you to recursively build components with
-			themselves.
+			One awesome feature is
+			<CodeSnippet>
+				<svelte:fragment slot="code">svelte:self</svelte:fragment>
+			</CodeSnippet> - this allows you to recursively build components with themselves.
 		</p>
 		<p>
 			Our JSONTree component has a prop for <em>data</em>, which takes an iterative and iterates
