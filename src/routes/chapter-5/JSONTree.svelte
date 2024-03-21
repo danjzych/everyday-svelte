@@ -1,5 +1,15 @@
 <script lang="ts">
+	import StringValue from './StringValue.svelte';
+	import NumberValue from './NumberValue.svelte';
+	import JsonValue from './JSONValue.svelte';
+
 	export let data: {}; //any data shape is okay for our JSON here.
+
+	function getComponentType(type: any): ConstructorOfATypedSvelteComponent {
+		if (type === 'string') return StringValue;
+		if (type === 'number') return NumberValue;
+		return JsonValue;
+	}
 </script>
 
 <ul class="list-inside list-disc pl-8">
@@ -14,9 +24,7 @@
 			{#if typeof value === 'object'}
 				<svelte:self data={value} />
 			{:else}
-				<span class="font-light">
-					{value}
-				</span>
+				<svelte:component this={getComponentType(typeof value)} {value} />
 			{/if}
 		</li>
 	{/each}

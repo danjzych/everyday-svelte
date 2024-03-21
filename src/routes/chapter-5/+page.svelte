@@ -14,11 +14,11 @@
 		<p>
 			You can use
 			<CodeSnippet>
-				<svelte:fragment slot="code">slots</svelte:fragment>
+				<svelte:fragment slot="code">{'<slot />'}</svelte:fragment>
 			</CodeSnippet>
 			and
 			<CodeSnippet>
-				<svelte:fragment slot="code">svelte:fragments</svelte:fragment>
+				<svelte:fragment slot="code">{'<svelte:fragment />'}</svelte:fragment>
 			</CodeSnippet>
 			to dynamically render content within a component. Here, we have a Card component that takes 'header'
 			and 'content' slots.
@@ -50,7 +50,7 @@
 		<p>
 			One awesome feature is
 			<CodeSnippet>
-				<svelte:fragment slot="code">svelte:self</svelte:fragment>
+				<svelte:fragment slot="code">{'<svelte:self />'}</svelte:fragment>
 			</CodeSnippet> - this allows you to recursively build components with themselves.
 		</p>
 		<p>
