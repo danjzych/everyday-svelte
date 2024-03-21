@@ -20,7 +20,7 @@
 			<CodeSnippet>
 				<svelte:fragment slot="code">svelte:fragments</svelte:fragment>
 			</CodeSnippet>
-			to dyanamically render content within a component. Here, we have a Card component that takes 'header'
+			to dynamically render content within a component. Here, we have a Card component that takes 'header'
 			and 'content' slots.
 		</p>
 		<p>
