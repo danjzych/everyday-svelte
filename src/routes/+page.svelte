@@ -1,2 +1,16 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<main class="px-5 py-3">
+	<p>
+		This project contains my personal solutions and implementations to the exercises found in Tan Li
+		Hau's phenomenal book <a
+			class="font-semibold underline hover:opacity-65"
+			href="https://www.packtpub.com/product/real-world-svelte/9781804616031">Real World Svelte</a
+		>.
+	</p>
+
+	<ol class="my-5 flex list-disc flex-col items-center">
+		<h2 class="font-mono text-lg">Sections</h2>
+		<li>
+			<a href="/chatper-5"><span class="font-semibold">Chapter 5:</span> Component Composition</a>
+		</li>
+	</ol>
+</main>
