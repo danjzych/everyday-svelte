@@ -54,10 +54,10 @@
 			</CodeSnippet>
 			to implement a drag and drop feature.
 		</p>
-		<p>It dispatches custom dragStart, dragMove, and dragEnd events that we can hook into.</p>
+		<p>It dispatches a custom dragMove event that we can hook into to move a component.</p>
 	</svelte:fragment>
 	<svelte:fragment slot="additional-content">
-		<div class="min-h-20 w-full">
+		<div class="min-h-10 w-full">
 			<div
 				style:top={y + 'px'}
 				style:left={x + 'px'}
@@ -71,5 +71,12 @@
 				drag me!
 			</div>
 		</div>
+		<small class="px-4"
+			><em
+				>Note: this drag and drop feature is imperfect and was only built to demonstrate Svelte
+				Actions. Tst will work on 'regular' client sizes and shapes, but will begin to fail when the
+				window is sized in uncommon ways.</em
+			></small
+		>
 	</svelte:fragment>
 </Card>
