@@ -17,5 +17,10 @@
 				><span class="font-semibold">Chapter 6:</span> Custom Events with Actions</a
 			>
 		</li>
+		<li>
+			<a href="/chapter-9"
+				><span class="font-semibold">Chapter 9:</span> Implementing Custom Stores</a
+			>
+		</li>
 	</ol>
 </main>
